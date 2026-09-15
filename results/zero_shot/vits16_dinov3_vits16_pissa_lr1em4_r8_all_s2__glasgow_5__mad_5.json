@@ -1,0 +1,24 @@
+{
+  "model": "vits16_dinov3_vits16_pissa_lr1em4_r8_all_s2",
+  "train_dataset": "glasgow_5",
+  "test_dataset": "mad_5",
+  "label_scheme": "har5",
+  "n_train": 1771,
+  "n_test": 10176,
+  "n_classes": 5,
+  "class_names": [
+    "Walk",
+    "Stand",
+    "Sit",
+    "Pick",
+    "Fall"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.2532429245283019,
+      "f1": 0.17539118413398078
+    }
+  },
+  "shift": "cross-dataset",
+  "method_label": "DINOv3-S + PiSSA (Ours)"
+}

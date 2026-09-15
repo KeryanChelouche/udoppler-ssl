@@ -1,0 +1,24 @@
+{
+  "model": "resnet50_s0",
+  "train_dataset": "glasgow_5",
+  "test_dataset": "mad_5",
+  "label_scheme": "har5",
+  "n_train": 1771,
+  "n_test": 10176,
+  "n_classes": 5,
+  "class_names": [
+    "Walk",
+    "Stand",
+    "Sit",
+    "Pick",
+    "Fall"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.2940251572327044,
+      "f1": 0.09088699878493317
+    }
+  },
+  "shift": "cross-dataset",
+  "method_label": "ResNet50 (full FT)"
+}

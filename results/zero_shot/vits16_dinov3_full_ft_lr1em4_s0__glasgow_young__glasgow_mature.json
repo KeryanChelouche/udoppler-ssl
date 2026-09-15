@@ -1,0 +1,25 @@
+{
+  "model": "vits16_dinov3_full_ft_lr1em4_s0",
+  "train_dataset": "glasgow_young",
+  "test_dataset": "glasgow_mature",
+  "label_scheme": "glasgow6",
+  "n_train": 1357,
+  "n_test": 631,
+  "n_classes": 6,
+  "class_names": [
+    "Walking",
+    "Sitting down",
+    "Standing up",
+    "Picking up object",
+    "Drinking",
+    "Falling"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.7923930269413629,
+      "f1": 0.7759850147181281
+    }
+  },
+  "shift": "cross-age",
+  "method_label": "DINOv3-S (full FT)"
+}

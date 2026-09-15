@@ -1,0 +1,29 @@
+{
+  "model": "vits16_vit_selafd_lr1em4_s2",
+  "train_dataset": "mad_sub12",
+  "test_dataset": "mad_sub3",
+  "label_scheme": "mad10",
+  "n_train": 11132,
+  "n_test": 5372,
+  "n_classes": 10,
+  "class_names": [
+    "Walk",
+    "Stand",
+    "Sit",
+    "Up Stairs",
+    "Down Stairs",
+    "Pick",
+    "Step Over",
+    "Semi-Turn Around",
+    "Fall",
+    "Walk (Arbitrary)"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.4236783320923306,
+      "f1": 0.35296876402877725
+    }
+  },
+  "shift": "cross-orientation",
+  "method_label": "SelaFD-S"
+}

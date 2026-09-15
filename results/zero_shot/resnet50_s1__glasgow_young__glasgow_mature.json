@@ -1,0 +1,25 @@
+{
+  "model": "resnet50_s1",
+  "train_dataset": "glasgow_young",
+  "test_dataset": "glasgow_mature",
+  "label_scheme": "glasgow6",
+  "n_train": 1357,
+  "n_test": 631,
+  "n_classes": 6,
+  "class_names": [
+    "Walking",
+    "Sitting down",
+    "Standing up",
+    "Picking up object",
+    "Drinking",
+    "Falling"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.7591125198098256,
+      "f1": 0.7372613484516124
+    }
+  },
+  "shift": "cross-age",
+  "method_label": "ResNet50 (full FT)"
+}

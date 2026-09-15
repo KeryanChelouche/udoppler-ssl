@@ -1,0 +1,24 @@
+{
+  "model": "vits16_dinov3_full_ft_lr1em4_s1",
+  "train_dataset": "glasgow_5",
+  "test_dataset": "mad_5",
+  "label_scheme": "har5",
+  "n_train": 1771,
+  "n_test": 10176,
+  "n_classes": 5,
+  "class_names": [
+    "Walk",
+    "Stand",
+    "Sit",
+    "Pick",
+    "Fall"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.2586477987421384,
+      "f1": 0.13628000371874438
+    }
+  },
+  "shift": "cross-dataset",
+  "method_label": "DINOv3-S (full FT)"
+}

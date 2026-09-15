@@ -1,0 +1,50 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# Datasets (obtained separately, see README) — but keep the two prep scripts,
+# which live alongside the raw downloads they convert.
+data/*
+!data/MAD_STFT_MAT/
+data/MAD_STFT_MAT/*
+!data/MAD_STFT_MAT/prepare_mad.py
+!data/Glasgow_STFT_MAT/
+data/Glasgow_STFT_MAT/*
+!data/Glasgow_STFT_MAT/prepare_glasgow.py
+
+# Experiment outputs. The result JSONs are small (<0.5 MB in total) and ARE
+# committed, so every table and the figure can be rebuilt from a fresh clone
+# without access to the datasets. Only the regenerable intermediates (cached
+# features, fine-tuned checkpoints — several GB) and the per-run logs are
+# excluded.
+results/cache/
+results/plots/
+results/**/*.log
+
+# Pretrained checkpoints (fetched via HuggingFace/torch.hub, not committed)
+*.pt
+*.pth
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Local agent tooling (machine-specific permission settings)
+.claude/
+
+# AI assistant context (local only, describes the private parent repo)
+CLAUDE.md

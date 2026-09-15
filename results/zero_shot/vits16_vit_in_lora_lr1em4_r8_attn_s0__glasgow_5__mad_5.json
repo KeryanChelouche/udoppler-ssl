@@ -1,0 +1,24 @@
+{
+  "model": "vits16_vit_in_lora_lr1em4_r8_attn_s0",
+  "train_dataset": "glasgow_5",
+  "test_dataset": "mad_5",
+  "label_scheme": "har5",
+  "n_train": 1771,
+  "n_test": 10176,
+  "n_classes": 5,
+  "class_names": [
+    "Walk",
+    "Stand",
+    "Sit",
+    "Pick",
+    "Fall"
+  ],
+  "probes": {
+    "supervised": {
+      "acc": 0.18691037735849056,
+      "f1": 0.09132455368930097
+    }
+  },
+  "shift": "cross-dataset",
+  "method_label": "ImageNet ViT-S + LoRA"
+}
